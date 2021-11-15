@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <span class="asterik">*</span>
+        <label class="bold" for="citizen" style="margin-right:50px">Whether citizen of India</label>
+        <label>Yes</label>
+        <input type="radio" name="citizen" value="Yes">
+        <label>No</label>
+        <input type="radio" name="citizen" value="No">
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <label class="bold" for="PAN">Permanent Account Number</label>
+        <input type="text" name="PAN" required />
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <label class="bold" for="name">1.Name</label>
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <span class="asterik">*</span>
+        <label class="bold" for="title"  style="margin-right:50px">Title</label>
+        <label>Shri/Mr</label>
+        <input type="radio" name="title" value="Mr">
+        <label>Smt./Mrs.</label>
+        <input type="radio" name="title" value="Mrs">
+        <label>Kumari/Ms</label>
+        <input type="radio" name="title" value="Ms">
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <label class="bold Lname" for="Lname">Last Name/Surname</label>
+        <label class="bold Fname" for="Fname">First Name</label>
+        <label class="bold Mname" for="Mname">Middle Name</label>
+        <br>
+        <input type="text" name="Lname" class="Lname" />
+        <input type="text" name="Fname" class="Fname" />
+        <input type="text" name="Mname" class="Mname" />
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <span class="asterik">*</span>
+        <label for="cardName" class="bold">Name as you would like it printed on the card</label>
+        <span class="suggestion bold">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc.
+          are not allowed)</span>
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <input type="text" name="cardName" id="cardName" />
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td>
+        <label class="bold" for="singleParent">Whether mother is single parnet and you wish to apply for PAN by
+          furnishing the name of your mother only</label>
+      </td>
+      <td>
+        <label>Yes</label>
+        <input type="radio" name="singleParent" value="Yes">
+        <label>No</label>
+        <input type="radio" name="singleParent" value="No">
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <span class="asterik">*</span>
+        <label class="bold" for="fatherName">Father's Name</label>
+        <span class="suggestion bold">(Mandatory field. Even married women should give father's name
+          only.)</span>
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <label class="bold Lname" for="fatherLname">Last Name/Surname</label>
+        <label class="bold Fname" for="fatherFname">First Name</label>
+        <label class="bold Mname" for="fatherMname">Middle Name</label>
+        <br>
+        <input type="text" name="fatherLname" class="Lname" />
+        <input type="text" name="fatherFname" class="Fname" />
+        <input type="text" name="fatherMname" class="Mname" />
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <label class="bold" for="motherName">Mother's Name</label>
+        <span class="suggestion bold">(This field is optional.)</span>
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td colspan="2">
+        <label class="bold Lname" for="motherLname">Last Name/Surname</label>
+        <label class="bold Fname" for="motherFname">First Name</label>
+        <label class="bold Mname" for="motherMname">Middle Name</label>
+        <br>
+        <input type="text" name="motherLname" class="Lname" />
+        <input type="text" name="motherFname" class="Fname" />
+        <input type="text" name="motherMname" class="Mname" />
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td>
+        <label class="bold" for="whichParName">4. Select Parent name which is to be printed on the card</label>
+        <br>
+        <span class="suggestion bold">(In case no option is provided then PAN card will be issued with father's
+          name)</span>
+      </td>
+      <td>
+        <label>Father Name</label>
+        <input type="radio" name="whichParName" value="Yes">
+        <label>Mother Name</label>
+        <input type="radio" name="whichParName" value="No">
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td class="bold">
+        <label for="DOB">5. Date of Birth/Incorporation/Agreement/Partnership <br> or Trust Deed/Formation of Body of Individuals/<br> Association</label>
+      </td>
+      <td>
+        <label for="day" id="day">DD</label>
+        <label for="month" id="month">MM</label>
+        <label for="year" id="year">YYYY</label>
+        <br>
+        <select name="day" id="day">
+          <option value=''>DD</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <select name="month" id="month">
+          <option value=''>MM</option>
+          <option value='1'>January</option>
+          <option value='2'>February</option>
+          <option value='3'>March</option>
+          <option value='4'>April</option>
+          <option value='5'>May</option>
+          <option value='6'>June</option>
+          <option value='7'>July</option>
+          <option value='8'>August</option>
+          <option value='9'>September</option>
+          <option value='10'>October</option>
+          <option value='11'>November</option>
+          <option value='12'>December</option>
+        </select>
+        <input type="text" name="year" id="year">
+      </td>
+    </tr>
+    <tr>
+      <td id="col1"></td>
+      <td>
+        <span class="asterik">*</span>
+        <label class="bold" name="gender">6. Gender</label>
+      </td>
+      <td>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female">
+        <label for="transgender">TransGender</label>
+        <input type="radio" name="gender" value="transgender">
+      </td>
+
+    </tr>
+
+  </table>
+</body>
+
+</html>

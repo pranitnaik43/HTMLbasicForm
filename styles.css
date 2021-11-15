@@ -1,0 +1,46 @@
+body {
+    font-size: 13px;
+    background-color: rgb(250, 250, 207);
+}
+table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 50px;
+    background-color: ffebee;
+}
+td {
+  border: 1px solid;
+}
+#col1 {
+    width: 25px;
+}
+.bold {
+    font-weight: bold;
+}
+.asterik {
+    color: red;
+    font-weight: bold;
+}
+input[type=radio] {
+  margin-right: 20px;
+}
+.Fname {
+    position: absolute;
+    left: 40%;
+}
+.Mname {
+    position: absolute;
+    left: 70%;
+}
+#cardName {
+    width: 220px;
+}
+.suggestion {
+    color:rgb(58, 55, 231);
+}
+#day, #month, #year {
+  display: inline-block;
+  width: 50px;
+}
+ 
